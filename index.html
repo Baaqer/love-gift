@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>إلى حبيبتي</title>
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff6a88,#ff99ac);
+font-family:Tahoma;
+color:white;
+text-align:center;
+}
+.box{
+background:rgba(255,255,255,0.2);
+padding:30px;
+border-radius:25px;
+max-width:420px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+h1{margin-bottom:15px;}
+p{
+font-size:18px;
+line-height:2;
+display:none;
+}
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4f7b;
+font-size:16px;
+cursor:pointer;
+}
+audio{display:none;}
+</style>
+</head>
+<body>
+
+<audio id="song" loop>
+  <source src="https://dl.sndup.net/7qmp/najib-banota-tshbahlek.mp3" type="audio/mpeg">
+</audio>
+
+<div class="box">
+<h1>إلى حبيبتي ❤️</h1>
+
+<p id="love">
+إنتِ مو صدفة بحياتي  
+إنتِ أجمل نعمة ربي دازها إلي ❤️  
+تشبهين الفرح  
+وتشبهين أغنية نجيب  
+وكل دگة بقلبي تنادي اسمج  
+أحبج… وكفى ✨  
+</p>
+
+<button onclick="showLove()">
+إضغطي هنا يا بنوتي 💌
+</button>
+</div>
+
+<script>
+function showLove(){
+  document.getElementById("love").style.display="block";
+  document.getElementById("song").play();
+}
+</script>
+
+</body>
+</html>
